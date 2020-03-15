@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background3"
+    tools:context=".FragmentGallery">
+
+    <TextView
+        android:id="@+id/my_TXT_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Cakes "
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/title_font"
+        android:textColor="#000000"
+        android:layout_margin="20dp"
+        android:textSize="50dp"
+        />
+    <com.synnapps.carouselview.CarouselView
+        android:layout_below="@+id/my_TXT_title"
+        android:layout_margin="20dp"
+        android:id="@+id/my_CAROU"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:pageColor="@color/pink"
+        app:fillColor="@color/colorAccent"
+        app:radius="7dp"
+        app:strokeColor="@color/colorPrimaryDark"
+        app:strokeWidth="1dp"/>
+
+
+</RelativeLayout>

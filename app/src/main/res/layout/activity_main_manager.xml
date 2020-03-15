@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background1"
+    tools:context=".ActivityMainManager">
+
+    <TextView
+        android:id="@+id/main_manager_TXT_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="W e l c o m e "
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:textSize="50dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/title_font"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/main_manager_BTN_all_orders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="all orders"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/popup_corners_btn_blue"
+        android:fontFamily="kidstar"
+        android:layout_marginTop="100dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/main_manager_TXT_title"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background2"
+    tools:context=".FragmentNumbers">
+
+    <ProgressBar
+        android:id="@+id/numbers_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="true"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/numbers_TXT_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Your Number "
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#000000"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/title_font"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:id="@+id/numbers_TXT_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click on arrows to change the numbers "
+        android:layout_below="@id/numbers_TXT_title"
+        android:layout_centerInParent="true"
+        android:textColor="#000000"
+        android:background="@drawable/popup_corners_low_pink"
+        android:layout_margin="2dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/kidstar"
+        android:textSize="25dp" />
+
+
+    <LinearLayout
+        android:id="@+id/numbers_LINEAR_up"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/numbers_TXT_explain">
+
+        <Button
+            android:id="@+id/numbers_BTN_up1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/img_numbers_up"
+        />
+
+        <Button
+            android:id="@+id/numbers_BTN_up2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/img_numbers_up"
+          />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/numbers_LINEAR_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numbers_LINEAR_up"
+        android:layout_above="@id/numbers_LINEAR_down"
+     >
+
+    <ImageView
+        android:id="@+id/numbers_IMG_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="20dp"  />
+
+    <ImageView
+        android:id="@+id/numbers_IMG_sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/numbers_LINEAR_down"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/numbers_BTN_down1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/img_numbers_down"/>
+
+        <Button
+            android:id="@+id/numbers_BTN_down2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/img_numbers_down"/>
+    </LinearLayout>
+</RelativeLayout>

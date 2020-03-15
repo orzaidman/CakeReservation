@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_android_black"
+    tools:context=".ActivityMakeOrder">
+
+    <ProgressBar
+        android:id="@+id/order_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="true"
+        android:visibility="invisible"/>
+
+    <FrameLayout
+        android:id="@+id/order_FRAME_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_above="@id/order_LINEAR_buttons"/>
+
+    <LinearLayout
+        android:id="@+id/order_LINEAR_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/low_pink"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/order_BTN_numbers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background= "@drawable/idea"
+            android:fontFamily="@font/kidstar"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+
+
+
+        <Button
+            android:id="@+id/order_BTN_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/candy"
+            android:textStyle="bold"
+            android:fontFamily="@font/kidstar"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/order_BTN_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/kidstar"
+            android:background="@drawable/checklist"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

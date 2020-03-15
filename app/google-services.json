@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "37240245126",
+    "firebase_url": "https://cakereservation-6e410.firebaseio.com",
+    "project_id": "cakereservation-6e410",
+    "storage_bucket": "cakereservation-6e410.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37240245126:android:79e5239bc7c1e3017bfa07",
+        "android_client_info": {
+          "package_name": "com.example.cakereservation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37240245126-727v0e983anv6kn7pe9g4riuad62b8no.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cakereservation",
+            "certificate_hash": "f39bd8677c83399d951b2eb1c2ecab59f0a58317"
+          }
+        },
+        {
+          "client_id": "37240245126-6b8pe014am9u464fk6cutg6gc12f5mqb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEpQClJLV-DM-dAPGAr5TNgyeFRrfSCW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37240245126-6b8pe014am9u464fk6cutg6gc12f5mqb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

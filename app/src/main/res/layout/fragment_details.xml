@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background2"
+    tools:context=".FragmentOrderDetails">
+
+    <TextView
+        android:id="@+id/details_TXT_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="some  details.. "
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/title_font"
+        android:textSize="30dp" />
+
+
+    <TextView
+        android:id="@+id/details_TXT_price"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/details_TXT_title"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/kidstar"
+        android:textStyle="bold"
+        android:background="@color/low_pink"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+    android:id="@+id/details_TXT_tops"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+        android:textSize="20dp"
+        android:background="@color/low_pink"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:fontFamily="@font/kidstar"
+    android:layout_below="@id/details_TXT_price"
+    android:text="List of tops:"/>
+
+    <ListView
+    android:id="@+id/details_LIST_all"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:background="@drawable/popup_corners_low_pink"
+    android:layout_margin="10dp"
+    android:layout_below="@id/details_TXT_tops"
+        android:layout_above="@+id/details_DATE_calendar"/>
+
+
+    <CalendarView
+        android:id="@+id/details_DATE_calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:background="@drawable/popup_corners_low_pink"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/details_BTN_send"
+       />
+    <Button
+        android:id="@+id/details_BTN_send"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:text="send"
+        android:fontFamily="@font/kidstar"
+        android:layout_margin="5dp"
+        android:background="@color/pink"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

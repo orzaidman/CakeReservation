@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background1"
+    tools:context=".ActivityMainClient">
+
+    <TextView
+        android:id="@+id/main_TXT_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="W e l c o m e "
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:textSize="50dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/title_font"
+        android:textStyle="bold"
+         />
+
+    <Button
+        android:id="@+id/main_BTN_new_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="new order"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/popup_corners_btn_blue"
+        android:fontFamily="@font/kidstar"
+        android:layout_marginTop="110dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/main_TXT_title"/>
+    <Button
+        android:id="@+id/main_BTN_check_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="all orders"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/kidstar"
+        android:layout_below="@id/main_BTN_new_order"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/popup_corners_btn_blue"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/main_BTN_my_cakes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kidstar"
+        android:text="gallery"
+        android:layout_below="@id/main_BTN_check_status"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/popup_corners_btn_blue"
+        android:layout_marginTop="40dp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popup_corners">
+
+    <TextView
+        android:id="@+id/popup_TXT_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/kidstar"
+        android:layout_centerHorizontal="true"
+        android:text="Are you sure you want to apply?"/>
+
+    <Button
+        android:id="@+id/popup_BTN_yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:fontFamily="@font/kidstar"
+        android:layout_margin="5dp"
+        android:background="@drawable/popup_corners_btn"
+        android:textSize="20dp"
+        android:textStyle="bold"
+    android:layout_marginTop="10dp"
+       android:layout_above="@id/popup_BTN_no"
+        />
+
+    <Button
+        android:id="@+id/popup_BTN_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="no"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/kidstar"
+        android:background="@drawable/popup_corners_btn"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>
